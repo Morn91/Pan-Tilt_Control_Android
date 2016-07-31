@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="morn91.com.github.pan_tilt_control.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="88:88:88"
+        android:id="@+id/timerBg"
+        android:textSize="80sp"
+        android:alpha="0.1"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00"
+        android:onClick="timePicker"
+        android:id="@+id/timer0"
+        android:textSize="80sp"
+        android:clickable="true"
+        android:layout_alignTop="@+id/timerBg"
+        android:layout_alignLeft="@+id/timerBg"
+        android:layout_alignStart="@+id/timerBg" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=":"
+        android:id="@+id/colon0"
+        android:textSize="80sp"
+        android:layout_alignTop="@+id/timer0"
+        android:layout_toRightOf="@+id/timer0"
+        android:layout_toEndOf="@+id/timer0" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00"
+        android:onClick="timePicker"
+        android:id="@+id/timer1"
+        android:textSize="80sp"
+        android:clickable="true"
+        android:layout_alignTop="@+id/colon0"
+        android:layout_toRightOf="@+id/colon0"
+        android:layout_toEndOf="@+id/colon0" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=":"
+        android:id="@+id/colon1"
+        android:textSize="80sp"
+        android:layout_alignTop="@+id/timer1"
+        android:layout_toRightOf="@+id/timer1"
+        android:layout_toEndOf="@+id/timer1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00"
+        android:onClick="timePicker"
+        android:id="@+id/timer2"
+        android:textSize="80sp"
+        android:clickable="true"
+        android:layout_alignTop="@+id/colon1"
+        android:layout_toRightOf="@+id/colon1"
+        android:layout_toEndOf="@+id/colon1" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:max="1000"
+        android:layout_below="@+id/timerBg"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="1.4dp"
+        android:layout_marginRight="1.4dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/progressBar">
+
+        <EditText
+            android:text="151"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:gravity="center"
+            android:ems="10"
+            android:id="@+id/shotsField"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/setStart"
+            android:layout_alignEnd="@+id/setStart"
+            android:layout_alignLeft="@+id/setStart"
+            android:layout_alignStart="@+id/setStart" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="@string/shots"
+            android:id="@+id/shotsText"
+            android:gravity="center"
+            android:layout_below="@+id/shotsField"
+            android:layout_alignLeft="@+id/shotsField"
+            android:layout_alignStart="@+id/shotsField"
+            android:layout_alignRight="@+id/shotsField"
+            android:layout_alignEnd="@+id/shotsField" />
+
+        <EditText
+            android:text="22"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:gravity="center"
+            android:ems="10"
+            android:id="@+id/periodField"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/setEnd"
+            android:layout_alignEnd="@+id/setEnd"
+            android:layout_alignLeft="@+id/setEnd"
+            android:layout_alignStart="@+id/setEnd" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="@string/period"
+            android:id="@+id/periodText"
+            android:gravity="center"
+            android:layout_below="@+id/periodField"
+            android:layout_alignLeft="@+id/periodField"
+            android:layout_alignStart="@+id/periodField"
+            android:layout_alignRight="@+id/periodField"
+            android:layout_alignEnd="@+id/periodField" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/shotsField"
+            android:layout_toEndOf="@+id/shotsField"
+            android:layout_toLeftOf="@+id/periodField"
+            android:layout_toStartOf="@+id/periodField"
+            android:layout_alignBottom="@+id/shotsField">
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/pause"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:checked="false" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="@string/pause"
+            android:id="@+id/pauseText"
+            android:layout_below="@+id/shotsField"
+            android:layout_centerHorizontal="true" />
+
+        <RelativeLayout
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:id="@+id/center"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true">
+
+            <ImageButton
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:id="@+id/smoothButton"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" />
+
+        </RelativeLayout>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/right"
+            android:background="@mipmap/arrow"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/center"
+            android:layout_toEndOf="@+id/center" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/left"
+            android:background="@mipmap/arrow"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/center"
+            android:layout_toStartOf="@+id/center" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/up"
+            android:background="@mipmap/arrow"
+            android:layout_above="@+id/center"
+            android:layout_centerHorizontal="true" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/down"
+            android:background="@mipmap/arrow"
+            android:layout_below="@+id/center"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="96dp"
+            android:layout_height="48dp"
+            android:textSize="16sp"
+            android:text="@string/setStart"
+            android:id="@+id/setStart"
+            android:layout_above="@+id/center"
+            android:layout_toLeftOf="@+id/center"
+            android:layout_toStartOf="@+id/center"
+            android:onClick="setStart" />
+
+        <Button
+            android:layout_width="96dp"
+            android:layout_height="48dp"
+            android:textSize="16sp"
+            android:text="@string/setEnd"
+            android:id="@+id/setEnd"
+            android:layout_above="@+id/center"
+            android:layout_toRightOf="@+id/center"
+            android:layout_toEndOf="@+id/center"
+            android:onClick="setEnd" />
+
+        <Button
+            android:layout_width="96dp"
+            android:layout_height="48dp"
+            android:textSize="16sp"
+            android:text="@string/toStart"
+            android:id="@+id/toStart"
+            android:layout_below="@+id/center"
+            android:layout_toLeftOf="@+id/center"
+            android:layout_toStartOf="@+id/center"
+            android:onClick="toStart" />
+
+        <Button
+            android:layout_width="96dp"
+            android:layout_height="48dp"
+            android:textSize="16sp"
+            android:text="@string/toEnd"
+            android:id="@+id/toEnd"
+            android:layout_below="@+id/center"
+            android:layout_toRightOf="@+id/center"
+            android:layout_toEndOf="@+id/center"
+            android:onClick="toEnd" />
+
+        <Button
+            android:layout_width="96sp"
+            android:layout_height="48dp"
+            android:text="@string/stop"
+            android:id="@+id/stop"
+            android:onClick="stop"
+            android:textSize="16sp"
+            android:enabled="false"
+            android:layout_alignTop="@+id/start"
+            android:layout_alignRight="@+id/start"
+            android:layout_alignEnd="@+id/start" />
+
+        <Button
+            android:layout_width="96sp"
+            android:layout_height="48dp"
+            android:text="@string/start"
+            android:id="@+id/start"
+            android:onClick="start"
+            android:textSize="16sp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/setEnd"
+            android:layout_alignEnd="@+id/setEnd"
+            android:layout_alignLeft="@+id/setEnd"
+            android:layout_alignStart="@+id/setEnd" />
+
+        <RelativeLayout
+            android:layout_width="96sp"
+            android:layout_height="48dp"
+            android:onClick="request"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/setStart"
+            android:layout_alignEnd="@+id/setStart"
+            android:layout_alignLeft="@+id/setStart"
+            android:layout_alignStart="@+id/setStart">
+
+            <Button
+                android:textSize="16sp"
+                android:layout_width="48sp"
+                android:layout_height="24dp"
+                android:id="@+id/battery"
+                android:onClick="request"
+                android:background="@mipmap/battery"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+0.0°\n+0.0°"
+            android:id="@+id/degrees"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

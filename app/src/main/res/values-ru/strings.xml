@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Pan-Tilt Control</string>
+    <string name="start">Старт</string>
+    <string name="stop">Стоп</string>
+    <string name="reset">Сбросить таймер</string>
+    <string name="setStart">Начало</string>
+    <string name="setEnd">Конец</string>
+    <string name="toStart">К началу</string>
+    <string name="toEnd">К концу</string>
+    <string name="shots">Кадры</string>
+    <string name="period">Период</string>
+    <string name="pause">Пауза</string>
+    <string name="error">Ошибка</string>
+    <string name="yes">Да</string>
+    <string name="no">Нет</string>
+    <string name="noConnectDialog">Не удалось соединиться. Попробовать еще?</string>
+    <string name="stopDialog">Хотите остановить процесс?</string>
+    <string name="resetDialog">Хотите сбросить таймер?</string>
+    <string name="time_set">Установить время</string>
+    <string name="time_set_0">Уст. время начала</string>
+    <string name="time_set_1">Уст. длительность</string>
+    <string name="time_set_2">Уст. время конца</string>
+    <string name="set">Установить</string>
+    <string name="cancel">Отмена</string>
+</resources>

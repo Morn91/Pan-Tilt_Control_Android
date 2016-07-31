@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Pan-Tilt Control</string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="reset">Reset timer</string>
+    <string name="setStart">Set start</string>
+    <string name="setEnd">Set end</string>
+    <string name="toStart">To start</string>
+    <string name="toEnd">To end</string>
+    <string name="shots">Shots</string>
+    <string name="period">Period</string>
+    <string name="pause">Pause</string>
+    <string name="error">Error</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="noConnectDialog">Could not connect to device. Try again?</string>
+    <string name="stopDialog">Do you want to stop process?</string>
+    <string name="resetDialog">Do you want to reset timer?</string>
+    <string name="time_set">Set time</string>
+    <string name="time_set_0">Set starting time</string>
+    <string name="time_set_1">Set duration</string>
+    <string name="time_set_2">Set ending time</string>
+    <string name="set">Set</string>
+    <string name="cancel">Cancel</string>
+</resources>
