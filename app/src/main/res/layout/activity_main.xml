@@ -103,7 +103,6 @@
             android:text="151"
             android:textSize="16sp"
             android:textStyle="bold"
-            android:textColor="#000"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="number"
@@ -133,7 +132,6 @@
             android:text="22"
             android:textSize="16sp"
             android:textStyle="bold"
-            android:textColor="#000"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="numberDecimal"
@@ -241,7 +239,7 @@
         <Button
             android:layout_width="96dp"
             android:layout_height="48dp"
-            android:textSize="16sp"
+            android:textSize="14sp"
             android:text="@string/setStart"
             android:id="@+id/setStart"
             android:layout_above="@+id/center"
@@ -252,7 +250,7 @@
         <Button
             android:layout_width="96dp"
             android:layout_height="48dp"
-            android:textSize="16sp"
+            android:textSize="14sp"
             android:text="@string/setEnd"
             android:id="@+id/setEnd"
             android:layout_above="@+id/center"
@@ -263,7 +261,7 @@
         <Button
             android:layout_width="96dp"
             android:layout_height="48dp"
-            android:textSize="16sp"
+            android:textSize="14sp"
             android:text="@string/toStart"
             android:id="@+id/toStart"
             android:layout_below="@+id/center"
@@ -274,7 +272,7 @@
         <Button
             android:layout_width="96dp"
             android:layout_height="48dp"
-            android:textSize="16sp"
+            android:textSize="14sp"
             android:text="@string/toEnd"
             android:id="@+id/toEnd"
             android:layout_below="@+id/center"

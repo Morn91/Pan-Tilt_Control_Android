@@ -69,7 +69,7 @@ public class MainActivity extends Activity {
     public OutputStream output;
 
     public String address = "20:15:02:05:70:69";
-    public int progress = 0, color[] = {Color.parseColor("#64c9ff"), Color.parseColor("#ffffff"), Color.parseColor("#ffc964")};
+    public int progress = 0, color[] = {Color.parseColor("#80cbc4"), Color.parseColor("#ffffff"), Color.parseColor("#c4cb80")};
     public boolean go = false, smooth = false;
     Calendar timer[] = new Calendar[4];
 
